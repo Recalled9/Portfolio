@@ -28,7 +28,7 @@ export default function Experience() {
     {
       role: "AI Intern",
       company: "Corizo",
-      duration: "2025 (3 Months)",
+      duration: "2025 (1 Months)",
       location: "Remote",
       points: [
         "Worked on machine learning projects involving data preprocessing, model development, and evaluation.",
@@ -80,18 +80,18 @@ export default function Experience() {
 
         // 3D Tilt Effect logic
         const shine = card.querySelector(".card-shine");
-        
+
         const onMouseMove = (e) => {
           const rect = card.getBoundingClientRect();
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
-          
+
           const xc = rect.width / 2;
           const yc = rect.height / 2;
-          
+
           const dx = x - xc;
           const dy = y - yc;
-          
+
           gsap.to(card, {
             rotateY: dx / 25,
             rotateX: -dy / 25,
@@ -166,7 +166,7 @@ export default function Experience() {
               style={{ transformStyle: "preserve-3d" }}
             >
               <div className="card-shine absolute w-32 h-32 bg-primary/30 blur-3xl pointer-events-none opacity-0 transition-opacity" />
-              
+
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-10">
                   <div className="p-4 bg-primary/10 rounded-2xl border border-primary/20 group-hover:scale-110 transition-transform duration-500">
@@ -186,7 +186,7 @@ export default function Experience() {
                     {exp.company}
                   </h4>
                 </div>
-                
+
                 <ul className="space-y-4 mb-10">
                   {exp.points.map((point, pIndex) => (
                     <li key={pIndex} className="flex gap-4 text-[rgb(var(--fg))]/70 leading-relaxed text-sm md:text-base group/li">
@@ -198,8 +198,8 @@ export default function Experience() {
 
                 <div className="flex flex-wrap gap-2">
                   {exp.tags.map((tag, tIndex) => (
-                    <span 
-                      key={tIndex} 
+                    <span
+                      key={tIndex}
                       className="px-4 py-1.5 rounded-full bg-[rgb(var(--fg))]/5 border border-[rgb(var(--fg))]/10 text-xs font-mono text-[rgb(var(--fg))]/60"
                     >
                       {tag}
