@@ -17,7 +17,7 @@ export default function Footer() {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/shaan-mansoori',
+      url: 'https://www.linkedin.com/in/shaan-mansoori-1b6b0132a/',
       icon: <FaLinkedin className="w-5 h-5" />
     },
     {

@@ -112,13 +112,13 @@ export default function Contact() {
             Email Me <FaEnvelope className="text-blue-500" />
           </a>
           <a
-            href="tel:+911234567890" 
+            href="tel:+917355014728" 
             className="inline-flex items-center gap-2 px-6 py-3 border border-[rgb(var(--fg))]/30 rounded-lg hover:bg-[rgb(var(--fg))]/10 transition-colors"
           >
             Call Me <FaPhone className="text-green-500 rotate-90" />
           </a>
           <a
-            href="https://linkedin.com/in/shaan-mansoori" 
+            href="https://www.linkedin.com/in/shaan-mansoori-1b6b0132a/" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-[rgb(var(--fg))]/30 rounded-lg hover:bg-[rgb(var(--fg))]/10 transition-colors"

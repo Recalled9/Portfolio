@@ -29,7 +29,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/shaan-mansoori",
+    href: "https://www.linkedin.com/in/shaan-mansoori-1b6b0132a/",
     icon: <FiLinkedin className="w-6 h-6" />,
   },
   {
