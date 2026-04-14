@@ -28,8 +28,13 @@ const socialLinks = [
     icon: <FiMonitor className="w-6 h-6" />,
   },
   {
+    name: "LinkedIn",
+    href: "https://linkedin.com/in/shaan-mansoori",
+    icon: <FiLinkedin className="w-6 h-6" />,
+  },
+  {
     name: "Email",
-    href: "mailto:shaanmansoori239@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=shaanmansoori239@gmail.com",
     icon: <FiMail className="w-6 h-6" />,
   },
 ];
@@ -197,7 +202,7 @@ export default function Hero() {
               ref={nameRef}
               className="inline-block text-[rgb(var(--fg))] font-bold tracking-wide"
             >
-              Shaan Mansoori
+              Shaan  Mansoori
             </span>
             <br />
             <span ref={roleRef} className="text-[rgb(var(--fg))]/60 font-light opacity-0">
@@ -216,7 +221,7 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-6 mb-16"
           >
             <a
-              href="#"
+              href="/Shaan Mansoori Portfolio.pdf"
               download
               className="px-8 py-4 border border-[rgb(var(--fg))]/30 text-[rgb(var(--fg))] font-medium rounded-full hover:bg-[rgb(var(--fg))] hover:text-[rgb(var(--bg))] transition-all duration-300 flex items-center space-x-2"
             >
@@ -233,7 +238,7 @@ export default function Hero() {
                   setCopiedEmail(true);
                   setTimeout(() => setCopiedEmail(false), 1500);
                 } catch (e) {
-                  window.location.href = `mailto:${EMAIL}`;
+                  window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`;
                 }
               }}
               title={`Copy ${EMAIL}`}

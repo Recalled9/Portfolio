@@ -1,6 +1,6 @@
 'use client';
 
-import { FaGithub, FaGamepad, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaGamepad, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,8 +16,13 @@ export default function Footer() {
       icon: <FaGamepad className="w-5 h-5" />
     },
     {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/shaan-mansoori',
+      icon: <FaLinkedin className="w-5 h-5" />
+    },
+    {
       name: 'Email',
-      url: 'mailto:shaanmansoori239@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=shaanmansoori239@gmail.com',
       icon: <FaEnvelope className="w-5 h-5" />
     }
   ];

@@ -3,7 +3,7 @@
 const reverseString = (str) => {
     return str.split('').reverse().join('');
 }
-console.log(reverseString('hello Gourav'));
+console.log(reverseString('hello Shaan'));
 
 // check if the string is palindrome
 const isPalindrome = (str) => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { FaFacebookF, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaGithub, FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -102,12 +102,28 @@ export default function Contact() {
           <p>I'll Try My Best To Get Back To You!</p>
         </div>
 
-        <div ref={(el) => (elementsRef.current[3] = el)} className="mt-8">
+        <div ref={(el) => (elementsRef.current[3] = el)} className="mt-8 flex flex-wrap justify-center gap-4 px-4">
           <a
-            href="mailto:shaanmansoori239@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shaanmansoori239@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-[rgb(var(--fg))]/30 rounded-lg hover:bg-[rgb(var(--fg))]/10 transition-colors"
           >
             Email Me <FaEnvelope className="text-blue-500" />
+          </a>
+          <a
+            href="tel:+911234567890" 
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[rgb(var(--fg))]/30 rounded-lg hover:bg-[rgb(var(--fg))]/10 transition-colors"
+          >
+            Call Me <FaPhone className="text-green-500 rotate-90" />
+          </a>
+          <a
+            href="https://linkedin.com/in/shaan-mansoori" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-[rgb(var(--fg))]/30 rounded-lg hover:bg-[rgb(var(--fg))]/10 transition-colors"
+          >
+            LinkedIn <FaLinkedin className="text-blue-600" />
           </a>
         </div>
       </div>
